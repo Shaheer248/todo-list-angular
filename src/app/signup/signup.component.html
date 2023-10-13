@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div id="formContent">
+        <input type="text" #email class="fadeIn second" name="login" placeholder="Enter email">
+        <input type="text" #password class="fadeIn third" name="password" placeholder="Enter password">
+        <input type="text" #cpassword class="fadeIn third" name="cpassword" placeholder="Confirm password" (keyup.enter)="signupUser(email.value, password.value, cpassword.value)">
+        <p #errorBox class="d-flex justify-content-center" style="color: red;font-size: 18px;"></p>
+        <button class="btn btn-primary fadeIn fourth" (click)="signupUser(email.value, password.value, cpassword.value)">Signup</button>
+    </div>
+</div>

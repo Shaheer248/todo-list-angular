@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('./assets/img/background.jpg');
+    animation: fadeIn 1.2s;
+    opacity: 1;
+    zoom: 105%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

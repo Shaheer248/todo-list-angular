@@ -1,0 +1,16 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+	<li [ngbNavItem]="1" [ngClass]="{'ngbNav' : true}">
+		<button ngbNavLink>Add Todo</button>
+	</li>
+	<li [ngbNavItem]="2" [ngClass]="{'ngbNav' : true}">
+		<button ngbNavLink>Login</button>
+	</li>
+	<li [ngbNavItem]="3" [ngClass]="{'ngbNav' : true}">
+		<button ngbNavLink>Sign up</button>
+	</li>
+	<li [ngbNavItem]="4" [ngClass]="{'ngbNavLogout' : true}">
+		<button [ngClass]="{'display' : logoutDisplayNone}" ngbNavLink (click)="logout()">Logout</button>
+	</li>
+	<li [ngClass]="{'display' : logoutDisplayNone}" style="position: absolute; left: 23rem; top: 0.55rem">Logged in as: {{logoutText}}</li>
+</ul>
+<router-outlet></router-outlet>

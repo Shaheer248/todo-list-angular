@@ -1,0 +1,20 @@
+<br>
+<div class="d-flex justify-content-center">
+<input class="form-control w-25 border border-primary" placeholder="Add new todo" #todoBox>
+<button type="button" class="btn btn-primary" style="margin-left: 2px;" (click)="updateTodo(todoBox.value, todoEmpty);todoBox.value = '';">Add Todo</button>
+</div>
+<p #todoEmpty style="text-align: center;color:red;display:none;font-size: 18px;">Todo cannot be empty.</p>
+<br>
+<div *ngFor="let item of todoList" class="d-flex justify-content-center" style="margin-bottom: 10px;">
+      <li class="list-group-item todoli">{{item.todo}}</li>
+      <button type="button" class="btn btn-danger removeBtn w-10" (click)="removeTodo(item.id)">Remove</button>
+</div>
+<style>
+.todoli {
+    margin-top: 8px;
+    position: relative;
+    right: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+}
+</style>

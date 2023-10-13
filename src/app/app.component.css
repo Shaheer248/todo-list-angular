@@ -1,0 +1,47 @@
+.ngbNav:hover {
+    background-color: cornflowerblue;
+}
+
+.ngbNav button:hover {
+    background-color: cornflowerblue;
+}
+
+.ngbNav button:hover {
+    color: #fff;
+}
+
+.ngbNavLogout:hover {
+    background-color: red;
+}
+
+
+.ngbNavLogout button {
+    color: red;
+}
+
+.ngbNavLogout button:hover {
+    color: #fff;
+}
+
+.logoutLi {
+    position: absolute;
+    top: 1px;
+    right: 120px;
+}
+
+.logoutBtn {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+}
+
+.display {
+    display: none;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
